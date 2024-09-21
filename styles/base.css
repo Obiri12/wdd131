@@ -35,7 +35,7 @@ header nav a:hover {
 }
 
 .highlight {
-    color: #ffd700; /* Gold color for the name */
+    color: #ffd700; 
 }
 
 /* Main Content Section */
@@ -114,7 +114,7 @@ footer p {
 }
 
 footer span {
-    color: white; /* Pink color for icons */
+    color: white; 
 }
 
 /* Last Modified Styling */

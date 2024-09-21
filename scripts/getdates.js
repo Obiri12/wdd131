@@ -11,5 +11,5 @@ if (yearElement) {
 const lastModifiedElement = document.getElementById("lastModified");
 if (lastModifiedElement) {
     const lastModified = document.lastModified;    // Get the last modified date of the document
-    lastModifiedElement.textContent = 'lastModified: ${lastModified}'; // Insert it into the paragraph
+    lastModifiedElement.textContent = 'lastModified: ${lastModified}';
 }
