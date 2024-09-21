@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    color: #ffd700; /* Gold color for the name */
+}
+
+/* Main Content Section */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Specific sections */
+.card h2 {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Flag Styling */
+.flag {
+    max-width: 100px;
+    margin-right: 15px;
+    float: left;
+}
+
+/* Footer Section */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 1em;
+}
+
+footer span {
+    color: white; /* Pink color for icons */
+}
+
+/* Last Modified Styling */
+#lastModified {
+    margin-top: 5px;
+    color: white;
+    font-size: 0.85em;
+}
