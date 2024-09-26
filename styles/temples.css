@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #4B0082; /* Dark purple background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+#hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: none;
+    text-align: center;
+}
+
+#menu li {
+    margin: 10px 0;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery styling */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column in mobile */
+    gap: 15px;
+    padding: 10px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+figcaption {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4B0082;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive navigation toggle */
+.hidden {
+    display: none;
+}
