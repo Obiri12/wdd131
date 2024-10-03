@@ -1,0 +1,130 @@
+:root {
+    --primary-color: rgb(36, 35, 35); 
+    --secondary-color: #FFD700; /* Yellow from Ghana's flag */
+    --background-color: #fff;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+
+/* Header Styling */
+.hero-header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-header h1 {
+    font-size: 3rem;
+}
+
+/* Hero Section */
+.hero {
+    height: var(--hero-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Weather Section */
+.weather {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.weather p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: var(--font-color);
+}
+
+.weather-emoticon {
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+
+.weather strong {
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #050505;
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p, footer a {
+    margin-bottom: 0.5rem;
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+    .weather {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .weather-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .weather p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-header h1 {
+        font-size: 4rem;
+    }
+
+    .weather {
+        max-width: 1000px;
+    }
+}

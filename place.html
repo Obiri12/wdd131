@@ -7,7 +7,7 @@
     <meta name="author" content="Obiri Asiedu Bempa">
     <title>Visit Ghana</title>
     <!-- Linking the external CSS file -->
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/place.css">
 </head>
 <body>
     <header class="hero-header">
@@ -19,29 +19,13 @@
             <source srcset="Images/hero-large.webp" media="(min-width: 800px)">
             <source srcset="Images/hero-small.webp" media="(max-width: 512px)">
             <img src="Images/hero-default.webp" alt="Beautiful view of Ghana" class="hero-img">
-        </picture>
-    </section>
-    
-    <section class="data">
-        <h2>Data</h2>
-        <ul>
-            <li><strong>Area:</strong> 238,533 sq km</li>
-            <li><strong>Population:</strong> 31,072,940</li>
-            <li><strong>Capital:</strong> Accra</li>
-            <li><strong>Languages:</strong> English, Akan</li>
-            <li><strong>Currency:</strong> Ghanaian Cedi</li>
-            <li><strong>Time Zone:</strong> UTC+0</li>
-            <li><strong>Calling Code:</strong> +233</li>
-            <li><strong>Internet TLD:</strong> .gh</li>
-        </ul>
-    </section>
 
     <section class="weather">
         <h2>Weather</h2>
         <img src="Images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
-        <p><strong>Temperature:</strong> 30°C</p>
-        <p><strong>Conditions:</strong> Partly Cloudy <span class="weather-emoticon">⛅</span></p>
-        <p><strong>Wind:</strong> 16 km/h</p>
+        <p><strong>Temp:</strong> 15°C</p>
+        <p><strong>Cond:</strong> Partly Cloudy <span class="weather-emoticon">⛅</span></p>
+        <p><strong>Wind:</strong> 10 km/h</p>
         <p><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></p>
     </section>
     
@@ -52,6 +36,6 @@
     </footer>
 
     <!-- Linking the external JavaScript file -->
-    <script src="Scripts/script.js" defer></script>
+    <script src="Scripts/weather.js" defer></script>
 </body>
 </html>
