@@ -1,130 +1,106 @@
+/* Global CSS Variables */
 :root {
-    --primary-color: rgb(36, 35, 35); 
-    --secondary-color: #FFD700; /* Yellow from Ghana's flag */
-    --background-color: #fff;
-    --text-color: #333;
+    --primary-color: #000000;  
+    --secondary-color: #FFD100; 
+    --accent-color: #17492c; 
+    --black-color: #000000; 
+    --background-color: #FFFFFF; 
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px; 
+    --heading-font-size: 2rem; 
 }
 
+/* Body Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--primary-color);
     margin: 0;
     padding: 0;
-    color: var(--text-color);
+
     background-color: var(--background-color);
 }
 
-
-/* Header Styling */
-.hero-header {
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 2rem;
+    color: var(--background-color);
 }
 
-.hero-header h1 {
+/* Weather Section Styles */
+#weather {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    max-width: 600px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#weather h2 {
+    position: relative;
+    padding-bottom: 20px; /* Space for pseudo-element */
+}
+
+/* Pseudo-element for Weather Icon */
+#weather h2::after {
+    content: "☀"; /* Placeholder icon */
     font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0; /* Positioning it above the heading */
 }
 
-/* Hero Section */
-.hero {
-    height: var(--hero-height);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Button Styles */
+#calculateButton {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: var(--font-size);
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#calculateButton:hover {
+    background-color: #005a1f; /* Darker green on hover */
 }
 
-/* Weather Section */
-.weather {
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 1200px;
-    margin: 2rem auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.weather h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.weather-icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
-}
-
-.weather p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    color: var(--font-color);
-}
-
-.weather-emoticon {
-    font-size: 1.5rem;
-    margin-left: 5px;
-}
-
-.weather strong {
-    font-weight: bold;
-}
-
-/* Footer Styling */
+/* Footer Styles */
 footer {
-    background-color: #050505;
-    color: var(--footer-text-color);
+
     text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
-footer p, footer a {
-    margin-bottom: 0.5rem;
-    color:white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: var(--accent-color);
-}
-
-/* Responsive Media Queries */
-@media (min-width: 768px) {
-    .weather {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #weather {
+        padding: 15px;
+        max-width: 90%; /* Responsive width */
     }
 
-    .weather-icon {
-        width: 120px;
-        height: 120px;
+    #weather h2 {
+        font-size: 1.5rem; /* Smaller heading on smaller screens */
     }
-
-    .weather p {
-        font-size: 1.5rem;
+    
+    #calculateButton {
+        padding: 8px 16px; /* Smaller button padding on smaller screens */
     }
 }
 
-@media (min-width: 1024px) {
-    .hero-header h1 {
-        font-size: 4rem;
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Smaller font size for very small screens */
     }
-
-    .weather {
-        max-width: 1000px;
+    
+    #weather h2::after {
+        font-size: 2rem; /* Smaller icon on very small screens */
     }
 }

@@ -6,36 +6,47 @@
     <meta name="description" content="Discover the beauty of Ghana, a West African nation known for its rich culture, vibrant landscapes, and welcoming people.">
     <meta name="author" content="Obiri Asiedu Bempa">
     <title>Visit Ghana</title>
-    <!-- Linking the external CSS file -->
-    <link rel="stylesheet" href="Styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="hero-header">
         <h1>Ghana</h1>
     </header>
 
-    <section class="hero">
-        <picture>
-            <source srcset="Images/hero-large.webp" media="(min-width: 800px)">
-            <source srcset="Images/hero-small.webp" media="(max-width: 512px)">
-            <img src="Images/hero-default.webp" alt="Beautiful view of Ghana" class="hero-img">
+    <!-- Main Section -->
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 800px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 512px)">
+                <img src="images/hero-small.webp" alt="Beautiful view of Ghana" class="hero-img">
+            </picture>
+        </section>
 
-    <section class="weather">
-        <h2>Weather</h2>
-        <img src="Images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
-        <p><strong>Temp:</strong> 15°C</p>
-        <p><strong>Cond:</strong> Partly Cloudy <span class="weather-emoticon">⛅</span></p>
-        <p><strong>Wind:</strong> 10 km/h</p>
-        <p><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></p>
-    </section>
-    
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+            <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p> 
+            <p><strong>Conditions:</strong> Partly Cloudy <span class="weather-emoticon">⛅</span></p>
+            <p><strong>Wind Speed:</strong> <span id="windSpeed">4.8</span> km/h</p> 
+            <p><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></p>
+            <button id="calculateButton">Calculate Wind Chill</button> 
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; <span id="year"></span> | Obiri Asiedu Bempa | Ghana</p>
-        <a href="images/WWR-Wireframes-Place.webp">Wireframe</a>
+
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 
-    <!-- Linking the external JavaScript file -->
-    <script src="Scripts/weather.js" defer></script>
+    <script src="scripts/weather.js" defer></script> 
 </body>
 </html>
