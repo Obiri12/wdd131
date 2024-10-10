@@ -1,0 +1,48 @@
+/* temples-large.css - for larger screens */
+@media (min-width: 512px) {
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #menu {
+        display: flex; 
+        justify-content: space-between;
+        width: auto;
+    }
+
+    #menu li {
+        margin: 0 15px;
+    }
+
+    /* Main content */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto; 
+    }
+
+    figure img {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Footer styling */
+    footer {
+        position: relative; 
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}

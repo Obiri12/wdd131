@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a beautiful album of temple images with dynamic filtering options.">
+    <meta name="author" content="Obiri Asiedu Bempa">
+    
+    <title>Filtered Temple Album</title>
+    
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <nav>
+            <button id="hamburger">☰</button>
+            <ul id="menu" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="current-section">Home</h2>
+        <div class="gallery" id="temple-gallery">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Obiri Asiedu Bempa. Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
