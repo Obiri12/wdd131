@@ -49,25 +49,25 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Salt Lake Temple",
-        location: "Salt Lake City, Utah, United States",
-        dedicated: "1893, April, 6",
-        area: 253015,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-exterior.jpg"
+        templeName: "Anchorage Alaska",
+        location: "Anchorage Alaska, United States",
+        dedicated: "1999, January, 9",
+        area: 11937,
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/ef1d9b0a65b398d3d5aad2ccaad5aa79588b6cfd/full/320%2C/0/default"
     },
     {
         templeName: "Johannesburg South Africa",
         location: "Johannesburg, South Africa",
         dedicated: "1985, August, 24",
         area: 28807,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-exterior.jpg"
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/b378c080e5880db5bf2bcf6d828b2f3fd59820de/full/320%2C/0/default"
     },
     {
-        templeName: "Tokyo Japan",
-        location: "Tokyo, Japan",
-        dedicated: "1980, October, 27",
-        area: 51839,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-exterior.jpg"
+        templeName: "London England",
+        location: "Newchapel, Surrey, England",
+        dedicated: "1958, September, 7",
+        area: 47600,
+        imageUrl: "https://www.churchofjesuschrist.org/imgs/914ec5701c2435b4cfa50668de85df2aebf68f26/full/320%2C/0/default"
     }
 ];
 
