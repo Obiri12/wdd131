@@ -19,13 +19,13 @@ function populateProductOptions() {
   });
 }
 
-// Function to get the last modification date and time
+
 function setLastModification() {
   const lastModified = new Date(document.lastModified);
   document.getElementById("last-modification").textContent = lastModified.toLocaleString();
 }
 
-// Function to increase the review count and store it in localStorage
+
 function incrementReviewCount() {
   let reviewCount = localStorage.getItem("reviewCount");
 
@@ -35,14 +35,14 @@ function incrementReviewCount() {
       reviewCount = parseInt(reviewCount);
   }
 
-  // Increment the counter
+  
   reviewCount += 1;
 
-  // Save the updated count to localStorage
+  
   localStorage.setItem("reviewCount", reviewCount);
 }
 
-// Ensure the form submission leads to the review.html
+
 document.addEventListener("DOMContentLoaded", function () {
   populateProductOptions();
   setLastModification();
