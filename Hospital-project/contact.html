@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us for any queries or support.">
+    <meta name="author" content="Your Name">
+    <title>Contact Us - Doctor Appointment System</title>
+    <link rel="stylesheet" href="styles/healthcare.css">
+</head>
+<body>
+    <header>
+        <img src="images/hospital-logo.png" alt="Our Healthcare System Logo">
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-service.html">About & Services</a></li>
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> ourhealthcare.org</p>
+            <p><strong>Phone:</strong> +233 257 573 251</p>
+            <p>We are here to assist you with any inquiries or concerns you may have. Feel free to contact us by phone, email, or visit our location.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3971.204852900346!2d-0.22640900000000003!3d5.536607!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9734552fc899%3A0x73b96e60d0bdae26!2sKorle%20Bu%20Teaching%20Hospital!5e0!3m2!1sen!2sgh!4v1729820951688!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="send_message.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+        <footer>
+            <p>©2024 🌿 Our Healthcare System 🌿 Obiri Asiedu Bempa 🌿 WDD 131</p>
+            <a href="images/desktop-contact-wireframe.png">Wireframe</a>
+            <a href="images/mobile-contact-wireframe.png">Wireframe</a>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+            </nav>
+        </footer>
+    <script src="scripts/healthcare.js"></script>
+</body>
+
+</html>
